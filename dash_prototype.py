@@ -16,7 +16,7 @@ from dash.dependencies import Input, Output
 import plotly.graph_objects as go
 
 def hente_bussdata():
-    headers = {"ET-Client-Name": "MUNTHES_BUSS"}
+    headers = {"ET-Client-Name": "****"}
     def run_query(query):
         request = requests.post('https://api.entur.io/journey-planner/v3/graphql', json={'query': query}, headers=headers)
         if request.status_code == 200:
@@ -79,7 +79,7 @@ def vaer_data():
     headers = requests.utils.default_headers()
     headers.update(
         {
-            'User-Agent': 'MUNTHES_KOLLEKTIV github.com/trlang',
+            'User-Agent': '**** github.com/trlang',
         }
     )
     
